@@ -1,0 +1,83 @@
+The MS2 format Dta file.
+
+The MS2 file format is used to record MS/MS spectra. A full description of 
+ 	the MS2 file format may be found in: McDonald,W.H. et al. MS1, MS2, and 
+	SQT-three unified, compact, and easily parsed file formats for the storage 
+	of shotgun proteomic spectra and identifications. Rapid Commun. Mass Spectrom. 
+	18, 2162-2168 (2004). 
+
+
+
+Header details
+Each line in the header must begin with an H. This is followed by a field label, and 
+	then a field value, all separated by white space. The field label must be one of 
+	the labels listed below, while the field value can be an aribrary string. A typical 
+	header is shown below. 
+
+H	CreationDate	2/14/2007 6:19:18 PM
+H	Extractor	MakeMS2
+H	ExtractorVersion	1.0
+H	Comments	MakeMS2 written by Michael J. MacCoss, 2004
+H	ExtractorOptions	MS2/MS1
+
+The following field labels must appear in the header: 
+
+Required header field labels Field Label Description 
+CreationDate The date and time when the file was created 
+Extractor The name of the software used to create the MS2 file 
+ExtractorVersion The version number of the Extractor software 
+ExtractorOptions The options used in running the extractor software 
+
+The following field labels are optional, and may appear in the header: 
+
+Optional header field labels Field Label Description 
+IAnalyzer Name of software used to conduct charge-state independent analysis of the spectra 
+IAnalyzerVersion The version number of the IAnalyzer software 
+IAnalyzerOptions The options used in running the IAnalyzer software 
+DAnalyzer Name of software used to conduct charge-state dependent analysis of the spectra 
+DAnalyzerVersion The version number of the DAnalyzer software 
+DAnalyzerOptions The options used in running the DAnalyzer software 
+SortedBy Name of field use to sort spectra  
+InstrumentType The type of mass analyzer used  
+Comment Remarks. Multiple comment lines are allowed  
+InstrumentSN Serial number of the mass spectrometer used  
+
+Scan details
+Each scan begins with a few records listing the parameters describing the spectrum. These lines must begin with S, I, Z, or D. The records are followed by pairs of m/z and intensity values, one pair per line. A fragment of a typical scan is shown below. 
+
+S	10	10	636.34
+Z	2	1271.67
+187.4 12.5
+193.1 19.5
+194.3 13.7
+198.3 29.8
+199.1 12.2
+
+
+
+
+Samples:
+
+H	CreationDate	2/14/2007 6:19:18 PM
+H	Extractor	MakeMS2
+H	ExtractorVersion	1.0
+H	Comments	MakeMS2 written by Michael J. MacCoss, 2004
+H	ExtractorOptions	MS2/MS1
+S	10	10	636.34
+Z	2	1271.67
+187.4 12.5
+193.1 19.5
+194.3 13.7
+198.3 29.8
+.
+.
+.
+S	10	10	636.34
+Z	2	1271.67
+187.4 12.5
+193.1 19.5
+194.3 13.7
+198.3 29.8
+.
+.
+.

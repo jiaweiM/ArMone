@@ -1,0 +1,65 @@
+x-xglc-HEX-1:5||(2d:1)n-acetyl	b-D-GlcpNAc	GlcNAcb	203.0793725336
+a-dgal-HEX-1:4	a-D-Galp	Gala	162.05282343049998
+b-lgal-HEX-1:5|6:d	b-L-Fucp	Fucb	146.0579088082
+a-dgro-dgal-NON-2:6|1:a|2:keto|3:d||(5d:1)n-acetyl|(4o:1)acetyl	a-D-Neup5Ac9Ac	NeuAcAca	333.10598121419997
+x-dgal-HEX-1:5||(2d:1)n-acetyl	b-D-GalpNAc	GalNAcb	203.0793725336
+b-dglc-HEX-1:5||(2d:1)n-acetyl|(6o:1)sulfate	b-D-GlcpNAc + (6-1) sulfate	GlcNAcb+sulfate	283.03618713049997
+a-dglc-HEX-x:x||(2d:1)n-acetyl	a-D-GlcpNAc	GlcNAca	203.0793725336
+b-dglc-HEX-1:5||(2d:1)n-acetyl|(-1o:1)sulfate	b-D-GlcpNAc + (6-1) sulfate	GlcNAcb+sulfate	283.03618713049997
+x-dglc-HEX-1:5||(2d:1)n-acetyl	b-D-GlcpNAc	GlcNAcb	203.0793725336
+a-dgal-HEX-1:5||(2d:1)n-acetyl	a-D-GalpNAc	GalNAca	203.0793725336
+b-dgal-HEX-1:5||(4o:1)methyl	b-D-Galp3Me	GalMeb	176.0684734943
+a-dman-HEX-1:5	a-D-Manp	Mana	162.05282343049998
+b-dgal-HEX-1:5	b-D-Galp	Galb	162.05282343049998
+x-lgal-HEX-1:5|6:d	b-L-Fucp	Fucb	146.0579088082
+b-dglc-HEX-1:5|6:a	D-Glc-onic	Glc-onic	178.0477380528
+b-dgal-HEX-1:5|6:d	b-D-Fucp	Fucb	146.0579088082
+b-xgal-HEX-1:5	b-D-Galp	Galb	162.05282343049998
+b-dglc-HEX-1:5||(2d:1)n-acetyl	b-D-GlcpNAc	GlcNAcb	203.0793725336
+x-xgal-HEX-1:4	b-D-Galp	Galb	162.05282343049998
+a-dxyl-PEN-1:4	a-D-Xylf	Xyla	132.0422587444
+b-dgal-HEX-1:5||(2d:1)n-acetyl|(3o:1)sulfate	b-D-GalpNAc + (4-1) sulfate	GalNAcb+sulfate	283.03618713049997
+b-dglc-HEX-x:x||(2d:1)n-acetyl	b-D-GlcpNAc	GlcNAcb	203.0793725336
+b-dgal-HEX-1:5||(2d:1)n-acetyl|(xo:1)sulfate	b-D-GalpNAc + (4-1) sulfate	GalNAcb+sulfate	283.03618713049997
+a-dman-HEX-1:5||(6o:1)phosphate	a-D-Manp + (6-1) P	Mana+P	242.01915381930002
+b-dgal-HEX-1:5||(3o:1)sulfate	b-D-Galp + (6-1) sulfate	Galb+sulfate	242.0096380274
+x-dgro-dgal-NON-2:6|1:a|2:keto|3:d||(5d:1)n-acetyl	b-D-Neup5Ac	NeuAcb	291.0954165281
+a-dglc-HEX-1:5	a-D-Glcp	Glca	162.05282343049998
+a-dman-HEX-x:x	a-D-Manp	Mana	162.05282343049998
+b-dgro-dgal-NON-2:6|1:a|2:keto|3:d||(5d:1)n-acetyl	b-D-Neup5Ac	NeuAcb	291.0954165281
+x-lgal-HEX-x:x|6:d	b-L-Fucp	Fucb	146.0579088082
+b-xgal-HEX-1:5||(2d:1)n-acetyl|(4o:1)sulfate	b-D-GalpNAc + (4-1) sulfate	GalNAcb+sulfate	283.03618713049997
+a-dglc-HEX-1:5|6:a	D-Glc-onic	Glc-onic	178.0477380528
+a-lgal-HEX-1:5|6:d	a-L-Fucp	Fuca	146.0579088082
+a-dgal-HEX-1:5	a-D-Galp	Gala	162.05282343049998
+b-dgal-HEX-1:5||(6o:1)sulfate	b-D-Galp + (6-1) sulfate	Galb+sulfate	242.0096380274
+b-dman-HEX-x:x	b-D-Manp	Manb	162.05282343049998
+x-dman-HEX-1:5	b-D-Manp	Manb	162.05282343049998
+b-dgal-HEX-1:4	b-D-Galp	Galb	162.05282343049998
+b-dara-HEX-1:5|3:d|6:d	b-D-3,6-deoxy-araHexp	deoxy-araHexb	130.0629941859
+a-dxyl-PEN-1:5	a-D-Xylf	Xyla	132.0422587444
+b-dgal-HEX-1:5||(2d:1)n-acetyl|(4o:1)sulfate	b-D-GalpNAc + (4-1) sulfate	GalNAcb+sulfate	283.03618713049997
+x-dglc-HEX-1:5	b-D-Glcp	Glcb	162.05282343049998
+x-dxyl-PEN-1:5	b-D-Xylf	Xylb	132.0422587444
+a-dman-HEX-1:5||(-1o:1)phosphate	a-D-Manp + (6-1) P	Mana+P	242.01915381930002
+b-dgal-HEX-1:5||(2d:1)n-acetyl	b-D-GalpNAc	GalNAcb	203.0793725336
+b-dgal-HEX-1:5||(3o:1)methyl	b-D-Galp3Me	GalMeb	176.0684734943
+x-dgal-HEX-1:4	b-D-Galp	Galb	162.05282343049998
+a-dgro-dgal-NON-2:6|1:a|2:keto|3:d||(5d:1)n-glycolyl	a-D-Neup5Gc	NeuGca	306.08250611849996
+x-dgro-dgal-NON-2:6|1:a|2:keto|3:d||(5d:1)n-glycolyl	b-D-Neup5Gc	NeuGcb	306.08250611849996
+b-dglc-HEX-1:5||(2d:1)amino	b-D-Glcp6N	GlcNb	161.0688078475
+a-dgro-dgal-NON-2:6|1:a|2:keto|3:d	a-D-Kdnp	Kdna	250.068867425
+a-dgal-HEX-1:5|6:d	a-D-Fucp	Fuca	146.0579088082
+b-xglc-HEX-1:5||(2d:1)n-acetyl	b-D-GlcpNAc	GlcNAcb	203.0793725336
+a-dglc-HEX-1:5||(2d:1)n-acetyl	a-D-GlcpNAc	GlcNAca	203.0793725336
+b-dglc-HEX-1:5	b-D-Glcp	Glcb	162.05282343049998
+x-dglc-HEX-x:x||(2d:1)n-acetyl	b-D-GlcpNAc	GlcNAcb	203.0793725336
+a-dgro-dgal-NON-2:6|1:a|2:keto|3:d||(5d:1)n-acetyl|(9o:1)acetyl	a-D-Neup5Ac9Ac	NeuAcAca	333.10598121419997
+b-dgal-HEX-1:5||(6d:1)amino	b-D-GalpN	GalNb	161.0688078475
+b-dgal-HEX-1:5||(2d:1)n-acetyl|(-1o:1)sulfate	b-D-GalpNAc + (4-1) sulfate	GalNAcb+sulfate	283.03618713049997
+b-dxyl-PEN-1:4	b-D-Xylf	Xylb	132.0422587444
+b-dxyl-PEN-1:5	b-D-Xylf	Xylb	132.0422587444
+x-dgal-HEX-1:5	b-D-Galp	Galb	162.05282343049998
+b-dman-HEX-1:5	b-D-Manp	Manb	162.05282343049998
+a-dgro-dgal-NON-2:6|1:a|2:keto|3:d||(5d:1)amino	a-D-Neup	Neua	249.08485184199998
+a-dgro-dgal-NON-2:6|1:a|2:keto|3:d||(5d:1)n-acetyl	a-D-Neup5Ac	NeuAca	291.0954165281
