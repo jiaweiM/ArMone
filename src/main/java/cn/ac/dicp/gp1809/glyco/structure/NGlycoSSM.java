@@ -29,7 +29,6 @@ import java.util.HashSet;
  */
 public class NGlycoSSM implements Comparable<NGlycoSSM>
 {
-
     private static DecimalFormat df4 = DecimalFormats.DF0_4;
     private int scannum;
     private int preCharge;
@@ -62,7 +61,7 @@ public class NGlycoSSM implements Comparable<NGlycoSSM>
     private FreeFeatures features;
 
     public NGlycoSSM(int scannum, int preCharge, double preMz, double pepMassExperiment, IPeak[] peaks,
-            HashSet<Integer> matchedPeaks, GlycoTree tree, double score, double deltaScore)
+                     HashSet<Integer> matchedPeaks, GlycoTree tree, double score, double deltaScore)
     {
         this.scannum = scannum;
         this.preCharge = preCharge;
@@ -78,14 +77,13 @@ public class NGlycoSSM implements Comparable<NGlycoSSM>
         this.monoGlycoMass = tree.getMonoMass();
         this.pepMass = Double.parseDouble(df4.format((preMz - AminoAcidProperty.PROTON_W) * (double) preCharge - monoGlycoMass));
         this.pepMassExperiment = pepMassExperiment;
-        this.matchPepIDs = new ArrayList<Integer>();
-        this.pepIDLabelTypeMap = new HashMap<Integer, Integer>();
+        this.matchPepIDs = new ArrayList<>();
+        this.pepIDLabelTypeMap = new HashMap<>();
     }
 
     public NGlycoSSM(int scannum, int preCharge, double preMz, double pepMassExperiment, IPeak[] peaks,
-            int rank, HashSet<Integer> matchedPeaks, GlycoTree tree, double score)
+                     int rank, HashSet<Integer> matchedPeaks, GlycoTree tree, double score)
     {
-
         this.scannum = scannum;
         this.preCharge = preCharge;
         this.preMz = preMz;
@@ -105,9 +103,8 @@ public class NGlycoSSM implements Comparable<NGlycoSSM>
     }
 
     public NGlycoSSM(int scannum, int preCharge, double preMz, double pepMass, double pepMassExperiment, IPeak[] peaks,
-            int rank, HashSet<Integer> matchedPeaks, GlycoTree tree, double score)
+                     int rank, HashSet<Integer> matchedPeaks, GlycoTree tree, double score)
     {
-
         this.scannum = scannum;
         this.preCharge = preCharge;
         this.preMz = preMz;
@@ -250,7 +247,6 @@ public class NGlycoSSM implements Comparable<NGlycoSSM>
 
     public String getPeakOneLine()
     {
-
         StringBuilder sb = new StringBuilder();
 
         sb.append(df4.format(preMz)).append(' ').append(preCharge).append(',');

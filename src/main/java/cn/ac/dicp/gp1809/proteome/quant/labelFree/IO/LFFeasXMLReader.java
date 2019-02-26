@@ -40,7 +40,6 @@ import java.util.regex.Pattern;
  */
 public class LFFeasXMLReader
 {
-
     protected Element root;
     protected File file;
     protected double totalCurrent;
@@ -50,14 +49,9 @@ public class LFFeasXMLReader
     private HashMap<String, IPeptide> pepMap;
     private HashMap<String, FreeFeatures> feaMap;
 
-    public LFFeasXMLReader()
-    {
-
-    }
 
     public LFFeasXMLReader(String file) throws DocumentException
     {
-        // TODO Auto-generated constructor stub
         this(new File(file));
     }
 
@@ -67,7 +61,6 @@ public class LFFeasXMLReader
      */
     public LFFeasXMLReader(File file) throws DocumentException
     {
-        // TODO Auto-generated constructor stub
         SAXReader reader = new SAXReader();
         Document document = reader.read(file);
         this.root = document.getRootElement();
@@ -82,8 +75,6 @@ public class LFFeasXMLReader
      */
     public static void main(String[] args) throws Exception
     {
-        // TODO Auto-generated method stub
-
         LFFeasXMLReader reader = new LFFeasXMLReader("D:\\My Documents\\110323_110124_AHSG_dimethyl_deglyco_CID_1.pxml");
         System.out.println(reader.mods.length);
     }
@@ -93,31 +84,25 @@ public class LFFeasXMLReader
      */
     protected void getProfileData()
     {
-        // TODO Auto-generated method stub
-
         System.out.println("Reading " + file.getName() + " ......");
 
         this.feasIt = root.elementIterator("Features");
         this.totalCurrent = Double.parseDouble(root.attributeValue("TotalCurrent"));
-        this.pepMap = new HashMap<String, IPeptide>();
-        this.feaMap = new HashMap<String, FreeFeatures>();
+        this.pepMap = new HashMap<>();
+        this.feaMap = new HashMap<>();
 
         try {
 
             this.setProNameAccesser();
             this.setMods();
             this.getAllFeas();
-
         } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
-
     }
 
     public void setProNameAccesser()
     {
-
         Iterator<Element> proIt = root.elementIterator("Protein_Info");
         if (proIt.hasNext()) {
             Element ePro = proIt.next();
@@ -170,7 +155,6 @@ public class LFFeasXMLReader
 
     protected void setMods() throws Exception
     {
-
         Iterator<Element> modIt = root.elementIterator("Modification");
         ArrayList<ModInfo> modlist = new ArrayList<ModInfo>();
 
@@ -190,7 +174,6 @@ public class LFFeasXMLReader
 
     private void getAllFeas()
     {
-
         while (feasIt.hasNext()) {
 
             Element eFeas = feasIt.next();
@@ -288,7 +271,6 @@ public class LFFeasXMLReader
      */
     public File getParentFile()
     {
-        // TODO Auto-generated method stub
         return file.getParentFile();
     }
 
@@ -298,5 +280,4 @@ public class LFFeasXMLReader
         this.root = null;
         System.gc();
     }
-
 }

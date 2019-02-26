@@ -375,7 +375,6 @@ public class MainGui2 extends JFrame implements ActionListener, ChangeListener
             jMenuBar0.add(getJMenuExport());
             jMenuBar0.add(getJMenuQuan());
             jMenuBar0.add(getJMenuGlycoQuant());
-//			getJMenuGlycoQuant();
             jMenuBar0.add(getJMenuTools());
         }
         return jMenuBar0;
@@ -990,10 +989,8 @@ public class MainGui2 extends JFrame implements ActionListener, ChangeListener
         }
 
         if (obj == this.getJMenuItemGlycoMatch()) {
-
             Component com = jTabbedPane0.getSelectedComponent();
             if (com instanceof PeptideListViewerPanel2) {
-
                 PeptideListViewerPanel2 pepview = (PeptideListViewerPanel2) com;
                 IFilteredPeptideListReader reader = pepview.getPepGetter().getSelectedPeptideReader();
                 LFreeCreateFrame qFrame = new LFreeCreateFrame(reader, this, 1, pepview.getFile());
@@ -1207,7 +1204,6 @@ public class MainGui2 extends JFrame implements ActionListener, ChangeListener
 
     private class LabelLoadThread extends Thread
     {
-
         private MainGui2 m2;
         private File file;
         private ProcessingDlgNew bar;
@@ -1225,7 +1221,6 @@ public class MainGui2 extends JFrame implements ActionListener, ChangeListener
 
         public void run()
         {
-
             AbstractFeaturesXMLReader reader = null;
             try {
                 reader = new LabelFeaturesXMLReader(file);
@@ -1247,7 +1242,6 @@ public class MainGui2 extends JFrame implements ActionListener, ChangeListener
 
     private class progressBarThread extends Thread
     {
-
         private Component com;
 
         private progressBarThread(Component com)
@@ -1261,5 +1255,4 @@ public class MainGui2 extends JFrame implements ActionListener, ChangeListener
             bar.setVisible(true);
         }
     }
-
 }
