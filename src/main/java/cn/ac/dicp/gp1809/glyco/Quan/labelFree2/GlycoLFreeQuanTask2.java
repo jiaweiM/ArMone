@@ -96,12 +96,12 @@ public class GlycoLFreeQuanTask2 implements ITask
                 NGlycoSSM[] ssms = getter.getGlycoSpectra();
                 IGlycoPeptide[] peps = getter.getGlycoPeptides();
 
-                for (int i = 0; i < ssms.length; i++) {
-                    writer.addGlycoSpectra(ssms[i]);
+                for (NGlycoSSM ssm : ssms) {
+                    writer.addGlycoSpectra(ssm);
                 }
 
-                for (int i = 0; i < peps.length; i++) {
-                    writer.addIdenPep(peps[i]);
+                for (IGlycoPeptide pep : peps) {
+                    writer.addIdenPep(pep);
                 }
 
                 writer.addBestEstimate(getter.getBestEstimate());
@@ -257,15 +257,6 @@ public class GlycoLFreeQuanTask2 implements ITask
                 para.getMzThresPPM() / 3.0, para.getRtTole());
     }
 
-    /**
-     * @param args
-     * @throws XMLStreamException
-     * @throws IOException
-     * @throws FileDamageException
-     * @throws DocumentException
-     * @throws WriteException
-     * @throws RowsExceededException
-     */
     public static void main(String[] args) throws FileDamageException,
             IOException, XMLStreamException, RowsExceededException, WriteException, DocumentException
     {
@@ -275,8 +266,8 @@ public class GlycoLFreeQuanTask2 implements ITask
 
 //		GlycoLFreeQuanTask2.testO18("H:\\NGLYCO\\NGlyco_final_20140401\\decoy_match");
 
-        String file = args[0];
-        String peak = args[1];
+        String file = "Z:\\WangShuyue\\data\\csv\\170722_uf_deg_3.csv.ppl";//args[0];
+        String peak = "Z:\\WangShuyue\\data\\mzxml\\170722_uf_g_6.mzXML";//args[1];
         String out = peak.replace("mzXML", "pxml");
         String xls = peak.replace("mzXML", "xls");
 

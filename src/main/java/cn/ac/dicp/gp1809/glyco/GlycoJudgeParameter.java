@@ -16,7 +16,6 @@ package cn.ac.dicp.gp1809.glyco;
  */
 public class GlycoJudgeParameter
 {
-
     private float intenThres;
     // PPM
     private float mzThresPPM;
